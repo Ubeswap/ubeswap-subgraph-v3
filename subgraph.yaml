@@ -1,6 +1,6 @@
 specVersion: 0.0.4
-description: Uniswap is a decentralized protocol for automated token exchange on Ethereum.
-repository: https://github.com/Uniswap/uniswap-v3-subgraph
+description: Ubeswap is a decentralized protocol on Celo
+repository: https://github.com/Ubeswap/ubeswap-subgraph-v3
 schema:
   file: ./schema.graphql
 features:
@@ -9,11 +9,11 @@ features:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: mainnet
+    network: celo
     source:
-      address: '0x1F98431c8aD98523631AE4a59f267346ea31F984'
+      address: '0x67FEa58D5a5a4162cED847E13c2c81c73bf8aeC4'
       abi: Factory
-      startBlock: 12369621
+      startBlock: 25639915
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -39,7 +39,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: mainnet
+    network: celo
     source:
       abi: Pool
     mapping:
