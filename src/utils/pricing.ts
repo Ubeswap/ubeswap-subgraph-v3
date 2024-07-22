@@ -5,12 +5,12 @@ import { Bundle, Pool, Token } from './../types/schema'
 import { ONE_BD, ZERO_BD, ZERO_BI } from './constants'
 
 const CELO_NATIVE_ADDRESS = '0x471ece3750da237f93b8e339c536989b8978a438'
-const CUSD_CELO_POOL_ADDRESS = '0x273e1Aa23F8B8e8Ace22c1104E1dA730EA52093C'
+const CUSD_CELO_POOL_ADDRESS = '0x273e1aa23f8b8e8ace22c1104e1da730ea52093c'
 
 const CUSD_ADDRESS = '0x765de816845861e75a25fca122bb6898b8b1282a'
 const BRIDGED_USDC_ADDRESS = '0xef4229c8c3250c675f21bcefa42f58efbff6002a'
 const NATIVE_USDC_ADDRESS = '0xceba9300f2b948710d2653dd7b07f33a8b32118c'
-const USDT_ADDRESS = '0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e'
+const USDT_ADDRESS = '0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e'
 
 // token where amounts should contribute to tracked volume and liquidity
 // usually tokens that many tokens are paired with
@@ -20,10 +20,10 @@ export let WHITELIST_TOKENS: string[] = [
   BRIDGED_USDC_ADDRESS,
   NATIVE_USDC_ADDRESS,
   USDT_ADDRESS,
-  '0x71e26d0E519D14591b9dE9a0fE9513A398101490', // UBE (new)
+  '0x71e26d0e519d14591b9de9a0fe9513a398101490', // UBE (new)
   '0xd8763cba276a3738e6de85b4b3bf5fded6d6ca73', // CEUR
   '0xe8537a3d056da446677b9e9d6c5db704eaab4787', // CREAL
-  '0x46c9757c5497c5b1f2eb73ae79b6b67d119b0b58', // PACT
+  '0x2b9018ceb303d540bbf08de8e7de64fddd63396c', // PACT
   '0x17700282592d6917f6a73d0bf8accf4d578c131e', // MOO
   '0x66803fb87abd4aac3cbb3fad7c3aa01f6f3fb207', // Portal Eth
   '0xbaab46e28388d2779e6e31fd00cf0e5ad95e327b' // WBTC

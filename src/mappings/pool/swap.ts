@@ -18,11 +18,6 @@ export function handleSwap(event: SwapEvent): void {
   const factory = Factory.load(FACTORY_ADDRESS)!
   const pool = Pool.load(event.address.toHexString())!
 
-  // hot fix for bad pricing
-  if (pool.id == '0x9663f2ca0454accad3e094448ea6f77443880454') {
-    return
-  }
-
   const token0 = Token.load(pool.token0)
   const token1 = Token.load(pool.token1)
 
